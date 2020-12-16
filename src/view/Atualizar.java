@@ -38,7 +38,7 @@ public class Atualizar extends JDialog {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 1L; 
 	final JPanel contentPanel = new JPanel();
 	private JTextField textTitulo;
 	private JTextField textId;
