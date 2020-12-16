@@ -1,0 +1,35 @@
+-- Table: public.fatura
+
+-- DROP TABLE public.fatura;
+
+CREATE TABLE public.fatura
+(
+  id bigint NOT NULL DEFAULT nextval('serialfaturas'::regclass),
+  titulo character varying,
+  valor character varying,
+  vencimento character varying,
+  numero character varying
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.fatura
+  OWNER TO postgres;
+  
+  
+ -- Table: public.bloqueio
+
+-- DROP TABLE public.bloqueio;
+
+CREATE TABLE public.bloqueio
+(
+  nomecliente character varying,
+  bloqueado boolean,
+  id bigint NOT NULL
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE public.bloqueio
+  OWNER TO postgres;
+ 
